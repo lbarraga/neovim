@@ -1,5 +1,7 @@
 # This file sets up the core language server rules and code actions.
-{
+{pkgs, ...}: {
+  extraPackages = [pkgs.tree-sitter];
+
   plugins = {
     lsp.enable = true;
 

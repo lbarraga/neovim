@@ -29,7 +29,7 @@
             key = "n";
           }
           {
-            action = "SessionRestore";
+            action = "AutoSession restore";
             desc = " Restore Session";
             icon = "󰦛 ";
             key = "s";

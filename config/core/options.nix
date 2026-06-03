@@ -19,6 +19,12 @@
     expandtab = true;
     shiftwidth = 2;
     tabstop = 2;
+    sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions";
+
+    # folding
+    foldmethod = "expr";
+    foldexpr = "v:lua.vim.treesitter.foldexpr()";
+    foldlevel = 99;
   };
 
   diagnostic = {

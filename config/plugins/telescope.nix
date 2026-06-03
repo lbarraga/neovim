@@ -9,7 +9,7 @@
     };
   };
 
-  extraPackages = [pkgs.ripgrep];
+  extraPackages = [pkgs.ripgrep pkgs.fd];
 
   keymaps = [
     {
