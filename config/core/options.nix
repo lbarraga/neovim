@@ -1,4 +1,5 @@
-{pkgs, ...}: {
+# Sets the basic editor rules and display settings.
+{
   vimAlias = true;
   viAlias = true;
 
@@ -39,17 +40,8 @@
         vim.highlight.on_yank({ timeout = 200 })
       end,
     })
-
-    -- Aggressively disable the active indent line on specific screens
-    vim.api.nvim_create_autocmd({ "FileType", "BufEnter", "BufWinEnter" }, {
-      pattern = { "dashboard", "neo-tree" },
-      callback = function()
-        vim.b.miniindentscope_disable = true
-      end,
-    })
   '';
 
-  extraPackages = [pkgs.alejandra];
   globals.mapleader = " ";
   clipboard.register = "unnamedplus";
 }

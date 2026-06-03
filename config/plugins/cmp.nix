@@ -1,3 +1,4 @@
+# This file configures the autocomplete popup menu.
 {
   plugins.cmp = {
     enable = true;
