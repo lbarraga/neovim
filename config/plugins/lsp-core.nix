@@ -34,5 +34,26 @@
       action = "<cmd>lua vim.diagnostic.open_float()<cr>";
       options.desc = "Line Diagnostics";
     }
+    {
+      mode = "n";
+      key = "<C-space>";
+      action = "van";
+      options.remap = true;
+      options.desc = "Start selection";
+    }
+    {
+      mode = "x";
+      key = "<C-space>";
+      action = "an";
+      options.remap = true;
+      options.desc = "Grow selection";
+    }
+    {
+      mode = "x";
+      key = "<BS>";
+      action = "in";
+      options.remap = true;
+      options.desc = "Shrink selection";
+    }
   ];
 }
