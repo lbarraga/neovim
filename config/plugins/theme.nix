@@ -1,4 +1,14 @@
-# This file applies the color scheme to the editor.
 {
-  colorschemes.catppuccin.enable = true;
+  colorschemes.catppuccin = {
+    enable = true;
+    settings = {
+      custom_highlights = ''
+        function(colors)
+          return {
+            LspInlayHint = { bg = "NONE", fg = colors.overlay0 },
+          }
+        end
+      '';
+    };
+  };
 }
