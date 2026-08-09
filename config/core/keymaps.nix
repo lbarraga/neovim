@@ -31,5 +31,11 @@
       action = "<cmd>qa<cr>";
       options.desc = "Quit all";
     }
+    {
+      mode = "n";
+      key = "<leader>R";
+      action = "gg\"_dGP";
+      options.desc = "Replace whole file with clipboard";
+    }
   ];
 }
